@@ -1,28 +1,27 @@
 <template>
   <div>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="안녕~ "/>
+    <Header />
+
+    <main>
+      <router-view />
+    </main>
+
+    <footer>
+      <p>저작권 © 2025</p>
+    </footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from './components/Header.vue'
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    Header,
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #34502c;
-  margin-top: 60px;
-}
+/* 스타일 부분 */
 </style>

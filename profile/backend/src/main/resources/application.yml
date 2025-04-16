@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: admin
+    password: 1234
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+# [ Mybatis ]
+mybatis:
+    config-path: classpath:mapper/mybatis-config.xml
+    resources-sub-path: oracle
+    param-count: 1000 #oracle
+    #        param-count: 2000 #mssql
+    resources-path: classpath:mapper/${mybatis.pilos2.resources-sub-path}/**/*-mapper.xml

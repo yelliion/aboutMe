@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ulogitech.pilos2.admin.dao.AdminDao">
+
+    <!-- 역할 아이디 조회(세션) -->
+    <select id="selectUser" resultType="dmap">
+        /* com.ulogitech.pilos2.admin.dao.AdminDao.selectMember */
+        SELECT ID FROM USER_PROFILE
+    </select>
+
+
+</mapper>
