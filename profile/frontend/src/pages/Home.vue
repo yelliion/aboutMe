@@ -1,13 +1,7 @@
     <template>
         <div>
-        Home
-        <main>
-            <router-view />
-        </main>
+        Homess
     
-        <footer>
-            <p>저작권 © 2025</p>
-        </footer>
         </div>
     </template>
     
@@ -18,4 +12,5 @@
         components: {
         }
     };
+    
     </script> 

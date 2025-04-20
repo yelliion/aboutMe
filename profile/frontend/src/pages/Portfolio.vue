@@ -3,12 +3,9 @@
         portFolio
     
         <main>
-            <router-view />
+            ss
         </main>
     
-        <footer>
-            <p>저작권 © 2025</p>
-        </footer>
         </div>
     </template>
     

@@ -1,22 +1,19 @@
 <template>
-    <header>
-        <nav>
-        <ul>
-            <li><router-link to="/">Home</router-link></li>
-            <li><router-link to="/portfolio">Portfolio</router-link></li>
-            <li><router-link to="/about">About Me</router-link></li>
+    <header class="app-header">
+      <nav>
+        <ul class="nav-links">
+          <li><router-link to="/about" class="nav-item">About Me</router-link></li>
+          <li><router-link to="/portfolio" class="nav-item">Portfolio</router-link></li>
         </ul>
-        </nav>
+      </nav>
     </header>
-</template>
-
-<script>
-    export default {
-        name: "AppHeader",
-    };
-</script>
-
-<style scoped>
-@import '../assets/styles/header.css'
-
-</style>
+  </template>
+  
+  <script>
+  export default {
+    name: "AppHeader",
+  };
+  </script>
+  
+  <style src="../assets/styles/header.css"></style>
+  

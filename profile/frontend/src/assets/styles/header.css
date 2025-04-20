@@ -1,25 +1,53 @@
-    /* header.css */
-    nav {
-        background-color: #333;
-        padding: 1rem;
-    }
-    
-    ul {
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
-    }
-    
-    li {
-        color: white;
-    }
-    
-    a {
-        color: white;
-        text-decoration: none;
-    }
-    
-    a:hover {
-        text-decoration: underline;
-    }
-    
+  /* 배경 그라디언트 + 글로우 효과 */
+  .app-header {
+        background: linear-gradient(135deg, #1e1e2f, #3a3a5a);
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  /* 네비게이션 기본 정렬 */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 링크 기본 스타일 */
+  .nav-item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* 마우스 오버 효과: 살짝 커지고 회전 */
+  .nav-item:hover {
+    transform: scale(1.1) rotate(-2deg);
+    color: #ffcc70;
+  }
+  
+  /* 글로우 이펙트 */
+  .nav-item::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: #ffcc70;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-item:hover::after {
+    width: 100%;
+  }
